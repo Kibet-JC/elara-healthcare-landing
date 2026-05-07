@@ -1,0 +1,1 @@
+/* NexCare — main script */
