@@ -6,6 +6,8 @@
     <meta name="description" content="NexCare — a clinical operations platform serving patients and clinicians in Kenya.">
     <title>NexCare — Healthcare for Kenya</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
   </head>
   <body>
     <header>
@@ -14,8 +16,15 @@
     </header>
 
     <main>
-      <section id="hero">
-        <h2>Hero</h2>
+      <section id="hero" class="hero">
+        <div class="container hero__inner">
+          <h1 class="hero__title">NexCare</h1>
+          <p class="hero__mission">
+            Trusted clinical care across Kenya — designed by clinicians,
+            built around patients.
+          </p>
+          <a class="btn btn--primary" href="#appointment">Book an appointment</a>
+        </div>
       </section>
 
       <section id="modules">
