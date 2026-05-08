@@ -1,1 +1,53 @@
 /* NexCare — base stylesheet */
+
+:root {
+  --color-primary: hsl(186 91% 31%);
+  --color-primary-hover: hsl(186 91% 25%);
+  --color-primary-contrast: hsl(0 0% 100%);
+  --color-text: hsl(222 47% 11%);
+  --color-text-muted: hsl(215 16% 35%);
+  --color-bg: hsl(0 0% 100%);
+  --color-bg-subtle: hsl(210 40% 98%);
+  --color-focus: hsl(38 92% 50%);
+  --color-border: hsl(214 32% 91%);
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 3rem;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+
+  --font-family-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: hsl(186 75% 50%);
+    --color-primary-hover: hsl(186 75% 58%);
+    --color-primary-contrast: hsl(222 47% 11%);
+    --color-text: hsl(210 40% 98%);
+    --color-text-muted: hsl(215 16% 75%);
+    --color-bg: hsl(222 47% 11%);
+    --color-bg-subtle: hsl(217 33% 17%);
+    --color-focus: hsl(38 92% 60%);
+    --color-border: hsl(217 33% 22%);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
