@@ -10,6 +10,7 @@
   --color-bg-subtle: hsl(210 40% 98%);
   --color-focus: hsl(38 92% 50%);
   --color-border: hsl(214 32% 91%);
+  --color-danger: hsl(0 72% 45%);
 
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
@@ -34,6 +35,7 @@
     --color-bg-subtle: hsl(217 33% 17%);
     --color-focus: hsl(38 92% 60%);
     --color-border: hsl(217 33% 22%);
+    --color-danger: hsl(0 80% 68%);
   }
 }
 

@@ -78,7 +78,104 @@
       </section>
 
       <section id="appointment">
-        <h2>Appointment</h2>
+        <div class="container">
+          <h2>Book an appointment</h2>
+          <p class="form-intro">
+            Tell us when works for you. We will confirm by phone within one working day.
+          </p>
+
+          <form id="appointment-form" class="form" novalidate>
+
+            <div class="form-field">
+              <label for="fullName" class="form-label">Full name</label>
+              <input id="fullName" name="fullName" type="text" class="form-input"
+                     required autocomplete="name"
+                     aria-describedby="error-fullName" />
+              <p id="error-fullName" class="form-error" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="phone" class="form-label">Phone number</label>
+              <input id="phone" name="phone" type="tel" class="form-input"
+                     required autocomplete="tel"
+                     placeholder="0712 345 678 or +254 712 345 678"
+                     aria-describedby="phone-hint error-phone" />
+              <p id="phone-hint" class="form-hint">Kenyan mobile or landline.</p>
+              <p id="error-phone" class="form-error" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="email" class="form-label">
+                Email <span class="form-optional">(optional)</span>
+              </label>
+              <input id="email" name="email" type="email" class="form-input"
+                     autocomplete="email"
+                     aria-describedby="error-email" />
+              <p id="error-email" class="form-error" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="date" class="form-label">Preferred date</label>
+                <input id="date" name="date" type="date" class="form-input"
+                       required aria-describedby="error-date" />
+                <p id="error-date" class="form-error" role="alert" aria-live="polite"></p>
+              </div>
+              <div class="form-field">
+                <label for="time" class="form-label">Preferred time</label>
+                <input id="time" name="time" type="time" class="form-input"
+                       required aria-describedby="error-time" />
+                <p id="error-time" class="form-error" role="alert" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="location" class="form-label">Preferred clinic location</label>
+              <select id="location" name="location" class="form-input"
+                      required aria-describedby="error-location">
+                <option value="" disabled selected>Choose a clinic</option>
+                <!-- TODO: replace with actual NexCare clinic locations -->
+                <option value="nairobi">Nairobi</option>
+                <option value="mombasa">Mombasa</option>
+                <option value="kisumu">Kisumu</option>
+              </select>
+              <p id="error-location" class="form-error" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="reason" class="form-label">Reason for visit</label>
+              <textarea id="reason" name="reason" rows="4" maxlength="500"
+                        class="form-input form-input--textarea"
+                        required aria-describedby="reason-hint error-reason"></textarea>
+              <p id="reason-hint" class="form-hint">
+                A short description helps us prepare. 500 characters max.
+              </p>
+              <p id="error-reason" class="form-error" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field form-field--checkbox">
+              <input id="consent" name="consent" type="checkbox" class="form-checkbox"
+                     required aria-describedby="error-consent" />
+              <label for="consent" class="form-label">
+                I have read and agree to the
+                <a href="https://github.com/Kibet-JC/nexcare-landing/blob/main/PRIVACY.md"
+                   target="_blank" rel="noopener">Privacy Notice</a>.
+              </label>
+              <p id="error-consent" class="form-error" role="alert" aria-live="polite"></p>
+            </div>
+
+            <p class="form-privacy">
+              Your information is processed under the Kenya Data Protection Act, 2019
+              for the purpose of arranging your appointment. See the
+              <a href="https://github.com/Kibet-JC/nexcare-landing/blob/main/PRIVACY.md"
+                 target="_blank" rel="noopener">Privacy Notice</a> for details.
+            </p>
+
+            <button type="submit" class="btn btn--primary">Request appointment</button>
+
+            <p class="form-success" hidden role="status" aria-live="polite" tabindex="-1"></p>
+          </form>
+        </div>
       </section>
 
       <section id="records" class="placeholder">
@@ -100,6 +197,6 @@
       <p>&copy; 2026 NexCare. All rights reserved.</p>
     </footer>
 
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
