@@ -64,6 +64,17 @@
   padding-block: var(--space-xl);
 }
 
+#appointment {
+  padding-block: var(--space-xl);
+  background-color: var(--color-bg-subtle);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
 @media (min-width: 768px) {
   .container {
     padding-inline: var(--space-lg);
@@ -89,6 +100,10 @@
   .modules__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-xl);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

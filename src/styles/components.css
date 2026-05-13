@@ -101,3 +101,126 @@
   margin: 0;
   color: var(--color-text-muted);
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: 36rem;
+  margin-top: var(--space-lg);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-field--checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: var(--space-sm);
+}
+
+.form-field--checkbox .form-error {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-optional {
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color-scheme: light dark;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  border-color: var(--color-primary);
+}
+
+.form-input[aria-invalid="true"] {
+  border-color: var(--color-danger);
+}
+
+.form-input--textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.form-checkbox {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.2rem;
+  accent-color: var(--color-primary);
+}
+
+.form-checkbox:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.form-hint {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.form-error {
+  margin: 0;
+  min-height: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--color-danger);
+}
+
+.form-error:empty {
+  min-height: 0;
+}
+
+.form-intro {
+  margin: var(--space-sm) 0 0;
+  color: var(--color-text-muted);
+  max-width: 36rem;
+}
+
+.form-privacy {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.form-success {
+  margin: 0;
+  padding: var(--space-md);
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+}
+
+.form-success:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
