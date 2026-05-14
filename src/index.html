@@ -84,13 +84,18 @@
             Tell us when works for you. We will confirm by phone within one working day.
           </p>
 
+          <p id="storage-warning" class="form-warning" hidden role="alert">
+            Your browser is blocking local storage. You can still fill the form, but
+            your draft cannot be saved between visits.
+          </p>
+
           <form id="appointment-form" class="form" novalidate>
 
             <div class="form-field">
               <label for="fullName" class="form-label">Full name</label>
               <input id="fullName" name="fullName" type="text" class="form-input"
                      required autocomplete="name"
-                     aria-describedby="error-fullName" />
+                     aria-describedby="error-fullName">
               <p id="error-fullName" class="form-error" role="alert" aria-live="polite"></p>
             </div>
 
@@ -99,7 +104,7 @@
               <input id="phone" name="phone" type="tel" class="form-input"
                      required autocomplete="tel"
                      placeholder="0712 345 678 or +254 712 345 678"
-                     aria-describedby="phone-hint error-phone" />
+                     aria-describedby="phone-hint error-phone">
               <p id="phone-hint" class="form-hint">Kenyan mobile or landline.</p>
               <p id="error-phone" class="form-error" role="alert" aria-live="polite"></p>
             </div>
@@ -110,7 +115,7 @@
               </label>
               <input id="email" name="email" type="email" class="form-input"
                      autocomplete="email"
-                     aria-describedby="error-email" />
+                     aria-describedby="error-email">
               <p id="error-email" class="form-error" role="alert" aria-live="polite"></p>
             </div>
 
@@ -118,13 +123,13 @@
               <div class="form-field">
                 <label for="date" class="form-label">Preferred date</label>
                 <input id="date" name="date" type="date" class="form-input"
-                       required aria-describedby="error-date" />
+                       required aria-describedby="error-date">
                 <p id="error-date" class="form-error" role="alert" aria-live="polite"></p>
               </div>
               <div class="form-field">
                 <label for="time" class="form-label">Preferred time</label>
                 <input id="time" name="time" type="time" class="form-input"
-                       required aria-describedby="error-time" />
+                       required aria-describedby="error-time">
                 <p id="error-time" class="form-error" role="alert" aria-live="polite"></p>
               </div>
             </div>
@@ -155,7 +160,7 @@
 
             <div class="form-field form-field--checkbox">
               <input id="consent" name="consent" type="checkbox" class="form-checkbox"
-                     required aria-describedby="error-consent" />
+                     required aria-describedby="error-consent">
               <label for="consent" class="form-label">
                 I have read and agree to the
                 <a href="https://github.com/Kibet-JC/nexcare-landing/blob/main/PRIVACY.md"
@@ -171,10 +176,27 @@
                  target="_blank" rel="noopener">Privacy Notice</a> for details.
             </p>
 
-            <button type="submit" class="btn btn--primary">Request appointment</button>
+            <div class="form-actions">
+              <button id="submit-button" type="submit" class="btn btn--primary">Request appointment</button>
+              <button id="cancel-edit" type="button" class="btn btn--ghost" hidden>Cancel edit</button>
+            </div>
 
             <p class="form-success" hidden role="status" aria-live="polite" tabindex="-1"></p>
           </form>
+
+          <aside id="appointment-list" class="appointment-list" hidden>
+            <header class="appointment-list__header">
+              <h3>Your saved requests</h3>
+              <p class="appointment-list__hint">
+                Saved on this device only. To confirm a booking, please call us at
+                <a href="tel:+254000000000">+254 000 000 000</a>
+                <!-- TODO: replace with the actual NexCare callback number -->
+                or WhatsApp us at the same number. The online booking system goes
+                live in the next phase.
+              </p>
+            </header>
+            <ul id="appointment-list-items" class="appointment-list__items"></ul>
+          </aside>
         </div>
       </section>
 

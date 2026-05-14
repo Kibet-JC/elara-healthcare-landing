@@ -35,6 +35,30 @@
   transform: translateY(1px);
 }
 
+.btn--ghost {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn--ghost:hover {
+  background-color: var(--color-bg-subtle);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn--danger {
+  background-color: transparent;
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+.btn--danger:hover {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+  color: var(--color-primary-contrast);
+}
+
 .btn:focus {
   outline: none;
 }
@@ -223,4 +247,103 @@
 .form-success:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
+}
+
+.form-warning {
+  margin: var(--space-md) 0 0;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-danger);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+
+.appointment-list {
+  margin-top: var(--space-xl);
+  max-width: 36rem;
+}
+
+.appointment-list__header {
+  margin-bottom: var(--space-md);
+}
+
+.appointment-list__header h3 {
+  margin: 0 0 var(--space-xs);
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.appointment-list__hint {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.appointment-list__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.appointment-item {
+  padding: var(--space-md);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.appointment-item__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.appointment-item__date {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.appointment-item__time {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.appointment-item__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.appointment-item__details p {
+  margin: 0;
+}
+
+.appointment-item__name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.appointment-item__location {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.appointment-item__reason {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.appointment-item__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.appointment-item__actions .btn {
+  padding: var(--space-xs) var(--space-md);
+  font-size: 0.9375rem;
 }

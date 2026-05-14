@@ -75,6 +75,30 @@
   gap: var(--space-lg);
 }
 
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.appointment-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: var(--space-md);
+  row-gap: var(--space-sm);
+  align-items: start;
+}
+
+@media (max-width: 360px) {
+  .appointment-item {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-item__actions {
+    justify-content: flex-start;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     padding-inline: var(--space-lg);
