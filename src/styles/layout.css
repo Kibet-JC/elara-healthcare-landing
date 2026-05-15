@@ -83,20 +83,10 @@
 
 .appointment-item {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr;
   column-gap: var(--space-md);
   row-gap: var(--space-sm);
   align-items: start;
-}
-
-@media (max-width: 360px) {
-  .appointment-item {
-    grid-template-columns: 1fr;
-  }
-
-  .appointment-item__actions {
-    justify-content: flex-start;
-  }
 }
 
 @media (min-width: 768px) {
@@ -128,6 +118,10 @@
 
   .form-row {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .appointment-item {
+    grid-template-columns: auto 1fr auto;
   }
 }
 

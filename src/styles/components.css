@@ -238,7 +238,7 @@
 .form-success {
   margin: 0;
   padding: var(--space-md);
-  background-color: var(--color-bg-subtle);
+  background-color: var(--color-bg);
   border: 1px solid var(--color-primary);
   border-radius: var(--radius-md);
   color: var(--color-text);
@@ -252,7 +252,7 @@
 .form-warning {
   margin: var(--space-md) 0 0;
   padding: var(--space-sm) var(--space-md);
-  background-color: var(--color-bg-subtle);
+  background-color: var(--color-bg);
   border: 1px solid var(--color-danger);
   border-radius: var(--radius-md);
   color: var(--color-text);
@@ -294,12 +294,14 @@
   background-color: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
+  overflow-wrap: break-word;
 }
 
 .appointment-item__meta {
   display: flex;
   flex-direction: column;
   gap: 0.125rem;
+  min-width: 0;
 }
 
 .appointment-item__date {
@@ -316,6 +318,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.125rem;
+  min-width: 0;
 }
 
 .appointment-item__details p {

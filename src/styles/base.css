@@ -1,14 +1,14 @@
 /* NexCare — base stylesheet */
 
 :root {
-  --color-primary: hsl(186 91% 31%);
-  --color-primary-hover: hsl(186 91% 25%);
+  --color-primary: hsl(186 91% 29%);
+  --color-primary-hover: hsl(186 91% 22%);
   --color-primary-contrast: hsl(0 0% 100%);
   --color-text: hsl(222 47% 11%);
   --color-text-muted: hsl(215 16% 35%);
   --color-bg: hsl(0 0% 100%);
   --color-bg-subtle: hsl(210 40% 98%);
-  --color-focus: hsl(38 92% 50%);
+  --color-focus: hsl(38 92% 38%);
   --color-border: hsl(214 32% 91%);
   --color-danger: hsl(0 72% 45%);
 
