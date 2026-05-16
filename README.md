@@ -56,6 +56,16 @@ This repo is module 1 of the NexCare 90-day roadmap. The full module ladder:
 
 ---
 
+## Known limitations
+
+- Open Graph / Twitter card images are not yet set; social previews will show as text-only until a brand image is added.
+- Clinic locations in the appointment form (Nairobi / Mombasa / Kisumu) are placeholder values; replace with the actual NexCare clinic locations before public launch.
+- Callback phone number in the saved-requests list is placeholder (+254 000 000 000); replace before public launch.
+- Online booking submissions persist on the visitor's device only; Phase 2 introduces the real API and submits to the clinic system.
+- Privacy Notice link points to the GitHub-rendered PRIVACY.md; a dedicated /privacy page on the site will land in a follow-up issue.
+
+---
+
 ## Compliance, privacy, security
 
 NexCare is operated under the laws of the Republic of Kenya, including the Data Protection Act, 2019 and the Health Act, 2017.
