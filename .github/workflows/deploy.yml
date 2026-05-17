@@ -1,0 +1,52 @@
+# Deploy the NexCare landing site to GitHub Pages.
+#
+# This workflow uploads the contents of `src/` as a Pages artifact on every
+# push to `main` (and on manual dispatch from the Actions tab), then deploys
+# it via the official actions/deploy-pages action. There is no build step —
+# the site is vanilla HTML/CSS/JS served straight from `src/`.
+#
+# One-time manual setup (already done by the repo owner):
+#   Settings -> Pages -> Build and deployment -> Source: "GitHub Actions"
+#
+# Authentication uses the default GITHUB_TOKEN; no PAT or third-party action.
+# The `id-token: write` permission is required for the OIDC handshake that
+# actions/deploy-pages performs.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'src'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

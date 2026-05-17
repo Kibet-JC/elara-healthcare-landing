@@ -2,7 +2,7 @@
 
 The public landing site for **NexCare**, a Health Information Management System (HIMS) and Electronic Health Record (EHR) operated by a registered Clinical Officer for a Kenyan clinic chain.
 
-> _Live site URL will be added here after first deploy: `_TODO_`_
+> **Live site:** https://kibet-jc.github.io/nexcare-landing/
 
 ---
 
@@ -38,7 +38,10 @@ Then open http://localhost:3000 (or :8000).
 
 ## Deploy
 
-Pushes to `main` trigger the GitHub Actions workflow at `.github/workflows/deploy.yml`, which publishes `src/` to GitHub Pages.
+- Pushes to `main` trigger the workflow at `.github/workflows/deploy.yml`.
+- The workflow uploads `src/` as a Pages artifact and deploys it via the official `actions/deploy-pages` action — no build step.
+- **One-time setup (already done):** repo **Settings → Pages → Build and deployment → Source** is set to **"GitHub Actions"**. New contributors with admin rights do not need to repeat this.
+- The workflow can be re-run manually from the **Actions** tab using the **"Run workflow"** button (`workflow_dispatch` trigger) — useful for re-deploying without a code change.
 
 ---
 
@@ -63,6 +66,7 @@ This repo is module 1 of the NexCare 90-day roadmap. The full module ladder:
 - Callback phone number in the saved-requests list is placeholder (+254 000 000 000); replace before public launch.
 - Online booking submissions persist on the visitor's device only; Phase 2 introduces the real API and submits to the clinic system.
 - Privacy Notice link points to the GitHub-rendered PRIVACY.md; a dedicated /privacy page on the site will land in a follow-up issue.
+- Custom domain not yet configured; the site is served from kibet-jc.github.io/nexcare-landing/ for Phase 1.
 
 ---
 
