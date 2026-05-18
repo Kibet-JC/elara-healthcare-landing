@@ -1,82 +1,121 @@
 # NexCare — Landing Site
 
-The public landing site for **NexCare**, a Health Information Management System (HIMS) and Electronic Health Record (EHR) operated by a registered Clinical Officer for a Kenyan clinic chain.
+**Live site:** https://kibet-jc.github.io/nexcare-landing/
 
-> **Live site:** https://kibet-jc.github.io/nexcare-landing/
+![NexCare hero](./docs/screenshots/hero-desktop-light.png)
+
+NexCare is a Health Information Management System (HIMS) and Electronic Health Record (EHR) for a Kenyan clinic chain, operated by a registered Clinical Officer. This repository is the public-facing landing site only; the clinical core and patient-facing modules live in separate repositories on the NexCare module ladder.
 
 ---
 
 ## About NexCare
 
-NexCare is a clinical software platform built for Kenyan primary and secondary care. It supports appointment booking, patient records, clinician workflows, and integration with the Social Health Authority (SHA / SHIF) and the Ministry of Health reporting pipeline. The system is built and operated by **Kibet**, a registered Clinical Officer, in partnership with established Kenyan hospital partners.
+NexCare is a clinical operations platform for primary and secondary care in Kenya, covering appointment booking, patient records, clinician workflows, and reporting into national systems including the Social Health Authority (SHA / SHIF) and the Ministry of Health. The platform is built and operated by **Kibet**, a registered Clinical Officer in Kenya, in partnership with established Kenyan hospital partners. NexCare operates under the **Kenya Data Protection Act, 2019** and the **Health Act, 2017**, and is registered with the Office of the Data Protection Commissioner (ODPC) as outlined in [COMPLIANCE.md](./COMPLIANCE.md). Modules move to production progressively under the per-module readiness gates defined in `COMPLIANCE.md` §12. This repository contains the landing site only; the clinical core (`nexcare-api`), the patient + clinician web app (`nexcare-web`), and the appointment intake module (`nexcare-appointments-client`) are tracked separately.
 
-This repository hosts the public-facing landing site only. Patient-facing modules and the clinical core live in separate repositories.
+---
+
+## Live site
+
+| | |
+|---|---|
+| Production URL | https://kibet-jc.github.io/nexcare-landing/ |
+| Hosting        | GitHub Pages |
+| Deploy         | Auto on push to `main`, see [Deploy](#deploy) |
+| Status         | Phase 1 — informational landing only; online booking submits to the local device only until Phase 2 |
+
+---
+
+## Screenshots
+
+### Desktop
+
+| | |
+|---|---|
+| ![Hero, light](./docs/screenshots/hero-desktop-light.png) | ![Hero, dark](./docs/screenshots/hero-desktop-dark.png) |
+| Hero (light) | Hero (dark) |
+| ![Modules](./docs/screenshots/modules-desktop.png) | ![Form](./docs/screenshots/form-desktop.png) |
+| Modules teaser | Appointment form |
+| ![Saved list](./docs/screenshots/saved-list-desktop.png) | |
+| Saved requests list | |
+
+### Mobile
+
+![Hero on mobile](./docs/screenshots/hero-mobile.png)
+
+### Quality
+
+![Lighthouse scores, mobile](./docs/screenshots/lighthouse-mobile.png)
+
+Lighthouse on the live URL, mobile profile.
 
 ---
 
 ## Stack
 
-- HTML5, CSS3, vanilla JavaScript (ES2022)
-- No frameworks, no bundler
-- GitHub Pages for hosting
-- GitHub Actions for deployment
+- **HTML5** with semantic landmarks (`header`, `nav`, `main`, `section`, `article`, `footer`) and WAI-ARIA where it adds meaning.
+- **CSS3** with CSS custom properties (light + dark token sets driven by `prefers-color-scheme`), BEM-style class names, and a small base + layout + components split. No preprocessor.
+- **Vanilla JavaScript** (ES2022 modules, no bundler), split into a pure validation module and a swappable persistence/state module so the Phase 2 API can replace `localStorage` by changing one file.
+- **GitHub Pages** for hosting, deployed via **GitHub Actions**.
+- No third-party trackers and no analytics in Phase 1.
 
 ---
 
 ## Run locally
 
 ```bash
-# Serve the site locally with any static server. Examples:
+git clone https://github.com/Kibet-JC/nexcare-landing.git
+cd nexcare-landing
 npx serve src
-# or
-python3 -m http.server -d src 8000
+# Open http://localhost:3000
 ```
 
-Then open http://localhost:3000 (or :8000).
+> ES modules require a server; opening `src/index.html` directly with `file://` will not work.
 
 ---
 
 ## Deploy
 
-- Pushes to `main` trigger the workflow at `.github/workflows/deploy.yml`.
-- The workflow uploads `src/` as a Pages artifact and deploys it via the official `actions/deploy-pages` action — no build step.
-- **One-time setup (already done):** repo **Settings → Pages → Build and deployment → Source** is set to **"GitHub Actions"**. New contributors with admin rights do not need to repeat this.
-- The workflow can be re-run manually from the **Actions** tab using the **"Run workflow"** button (`workflow_dispatch` trigger) — useful for re-deploying without a code change.
+- Pushes to `main` trigger `.github/workflows/deploy.yml`.
+- The workflow uploads `src/` as a Pages artifact and deploys via the official `actions/deploy-pages` action using the default `GITHUB_TOKEN`. There is no build step.
+- One-time setup (already done): repo **Settings → Pages → Source** is set to **"GitHub Actions"**.
+- Manual re-deploy: **Actions** tab → **"Deploy to GitHub Pages"** workflow → **"Run workflow"** (`workflow_dispatch`).
 
 ---
 
 ## Roadmap
 
-This repo is module 1 of the NexCare 90-day roadmap. The full module ladder:
+NexCare is built as a sequence of modules. This repository is module 1.
 
-1. **`nexcare-landing`** — this repo (landing + public information)
-2. `nexcare-appointments-client` — client-side appointment intake
-3. `nexcare-api` — Node + Express + Postgres clinical API
-4. `nexcare-web` — React patient + clinician web app
-5. Auth + RBAC (JWT, audit logs)
-6. Production deployment (Vercel + Railway)
-7. AI-assisted clinical note summarization (Claude API, server-side)
+| # | Module | Repository | Status |
+|---|---|---|---|
+| 1 | Public landing site | `nexcare-landing` | **Live** |
+| 2 | Client-side appointment intake (extracted into its own module) | `nexcare-appointments-client` | Planned |
+| 3 | Clinical API (Node + Postgres + Prisma) | `nexcare-api` | Planned |
+| 4 | Patient + clinician web app (React) | `nexcare-web` | Planned |
+| 5 | Auth + RBAC + audit logs | extends API + web | Planned |
+| 6 | AI-assisted clinical note summarization (server-side) | new module | Planned |
 
 ---
 
 ## Known limitations
 
-- Open Graph / Twitter card images are not yet set; social previews will show as text-only until a brand image is added.
-- Clinic locations in the appointment form (Nairobi / Mombasa / Kisumu) are placeholder values; replace with the actual NexCare clinic locations before public launch.
-- Callback phone number in the saved-requests list is placeholder (+254 000 000 000); replace before public launch.
 - Online booking submissions persist on the visitor's device only; Phase 2 introduces the real API and submits to the clinic system.
-- Privacy Notice link points to the GitHub-rendered PRIVACY.md; a dedicated /privacy page on the site will land in a follow-up issue.
-- Custom domain not yet configured; the site is served from kibet-jc.github.io/nexcare-landing/ for Phase 1.
+- Clinic locations in the appointment form (Nairobi / Mombasa / Kisumu) are placeholder values; the production clinic list is set before public launch.
+- The callback phone number shown in the saved-requests list is a placeholder (+254 000 000 000); replaced before public launch.
+- The Privacy Notice link points to the GitHub-rendered `PRIVACY.md`; a dedicated `/privacy` page on the site is tracked as a separate issue.
+- Custom domain is not yet configured; the site is served from `kibet-jc.github.io/nexcare-landing/` during Phase 1.
 
 ---
 
 ## Compliance, privacy, security
 
-NexCare is operated under the laws of the Republic of Kenya, including the Data Protection Act, 2019 and the Health Act, 2017.
+NexCare is operated under the laws of the Republic of Kenya, including the **Data Protection Act, 2019** and the **Health Act, 2017**. The lead clinician is a registered Clinical Officer.
 
-- [Compliance overview](./COMPLIANCE.md) — KDPA, ODPC, sub-processors, retention
+- [Compliance overview](./COMPLIANCE.md) — Kenya DPA / ODPC, sub-processors, retention
 - [Privacy notice](./PRIVACY.md) — patient-facing, plain language
 - [Security policy](./SECURITY.md) — vulnerability reporting, incident response
+
+To report a security vulnerability, please follow the process in [SECURITY.md](./SECURITY.md).
 
 ---
 
