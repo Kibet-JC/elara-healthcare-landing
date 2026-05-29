@@ -6,7 +6,7 @@
 
 ## 1. Reporting a vulnerability
 
-If you believe you have found a security vulnerability in any NexCare service, please email **_TODO: security@nexcare-domain_**.
+If you believe you have found a security vulnerability in any NexCare service, please email **security@elarahealthcare.co.ke**.
 
 - Please include: a description of the issue, steps to reproduce, the affected URL or component, and your name and contact details so we can follow up.
 - We will acknowledge receipt within 2 business days and aim to provide a substantive response within 14 days.

@@ -17,7 +17,7 @@ NexCare is operated by _TODO: legal entity name_, a healthcare provider register
 |---|---|
 | Registered office | _TODO: address_ |
 | Lead clinician | Kibet, Clinical Officer |
-| Contact for privacy queries | _TODO: privacy@nexcare-domain_ |
+| Contact for privacy queries | privacy@elarahealthcare.co.ke |
 | Data Protection Officer (DPO) | _TODO: name and contact_ |
 | ODPC registration number | _TODO_ |
 
@@ -116,7 +116,7 @@ Under the Data Protection Act, 2019 you have the right to:
 - **Withdraw consent** at any time, where consent is the lawful basis.
 - **Lodge a complaint** with the Office of the Data Protection Commissioner.
 
-To exercise any of these rights, write to _TODO: privacy@nexcare-domain_. We will respond within the timelines set out in the KDPA and its regulations. We may need to verify your identity before acting on a request.
+To exercise any of these rights, write to privacy@elarahealthcare.co.ke. We will respond within the timelines set out in the KDPA and its regulations. We may need to verify your identity before acting on a request.
 
 You also have the right under the **Health Act, 2017** to access information in your health record. Your clinician can guide you through this process.
 
@@ -157,7 +157,7 @@ We update this notice when our practices change. The current version is always a
 
 ## 12. Complaints
 
-If you believe we have not handled your personal data correctly, please contact us first at _TODO: privacy@nexcare-domain_ so we can try to resolve it. You also have the right to complain to the:
+If you believe we have not handled your personal data correctly, please contact us first at privacy@elarahealthcare.co.ke so we can try to resolve it. You also have the right to complain to the:
 
 **Office of the Data Protection Commissioner (ODPC)**
 Britam Tower, Hospital Road, Upper Hill, Nairobi

@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="NexCare — a clinical operations platform serving patients and clinicians in Kenya.">
+    <meta name="description" content="Elara Healthcare — trusted clinical care for patients and clinicians in Kenya.">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#0e7490" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#155e75" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <!-- TODO: replace canonical URL with custom domain when one is configured (e.g., nexcare.co.ke) -->
+    <!-- TODO: replace canonical URL with custom domain when one is configured (e.g., elarahealthcare.co.ke) -->
     <link rel="canonical" href="https://kibet-jc.github.io/nexcare-landing/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="NexCare — Healthcare for Kenya">
-    <meta property="og:description" content="NexCare — a clinical operations platform serving patients and clinicians in Kenya.">
+    <meta property="og:title" content="Elara Healthcare — Healthcare for Kenya">
+    <meta property="og:description" content="Elara Healthcare — trusted clinical care for patients and clinicians in Kenya.">
     <meta property="og:url" content="https://kibet-jc.github.io/nexcare-landing/">
     <meta property="og:locale" content="en_KE">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="NexCare — Healthcare for Kenya">
-    <meta name="twitter:description" content="NexCare — a clinical operations platform serving patients and clinicians in Kenya.">
-    <title>NexCare — Healthcare for Kenya</title>
+    <meta name="twitter:title" content="Elara Healthcare — Healthcare for Kenya">
+    <meta name="twitter:description" content="Elara Healthcare — trusted clinical care for patients and clinicians in Kenya.">
+    <title>Elara Healthcare — Healthcare for Kenya</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/components.css">
@@ -32,7 +32,7 @@
     <main>
       <section id="hero" class="hero">
         <div class="container hero__inner">
-          <h1 class="hero__title">NexCare</h1>
+          <h1 class="hero__title">Elara Healthcare</h1>
           <p class="hero__mission">
             Trusted clinical care across Kenya — designed by clinicians,
             built around patients.
@@ -43,7 +43,7 @@
 
       <section id="modules" class="modules">
         <div class="container">
-          <h2 class="modules__title">Explore NexCare</h2>
+          <h2 class="modules__title">Explore Elara Healthcare</h2>
           <div class="modules__grid">
             <article class="card">
               <span class="card__icon" aria-hidden="true">
@@ -57,7 +57,7 @@
               <h3 class="card__title">
                 <a class="card__link" href="#appointment">Appointments</a>
               </h3>
-              <p class="card__description">Book and manage your visits at any NexCare clinic.</p>
+              <p class="card__description">Book and manage your visits at any Elara Healthcare clinic.</p>
             </article>
 
             <article class="card">
@@ -153,10 +153,9 @@
               <select id="location" name="location" class="form-input"
                       required aria-describedby="error-location">
                 <option value="" disabled selected>Choose a clinic</option>
-                <!-- TODO: replace with actual NexCare clinic locations -->
-                <option value="nairobi">Nairobi</option>
-                <option value="mombasa">Mombasa</option>
-                <option value="kisumu">Kisumu</option>
+                <option value="eldoret">Eldoret — telemedicine first</option>
+                <option value="nairobi" disabled>Nairobi — coming soon</option>
+                <option value="mombasa" disabled>Mombasa — coming soon</option>
               </select>
               <p id="error-location" class="form-error" role="alert" aria-live="polite"></p>
             </div>
@@ -203,10 +202,10 @@
               <h3>Your saved requests</h3>
               <p class="appointment-list__hint">
                 Saved on this device only. To confirm a booking, please call us at
-                <a href="tel:+254000000000">+254 000 000 000</a>
-                <!-- TODO: replace with the actual NexCare callback number -->
-                or WhatsApp us at the same number. The online booking system goes
-                live in the next phase.
+                <a href="tel:+254724699077">+254 724 699 077</a>
+                or
+                <a href="https://wa.me/254724699077" rel="noopener" target="_blank">message us on WhatsApp</a>.
+                The online booking system goes live in the next phase.
               </p>
             </header>
             <ul id="appointment-list-items" class="appointment-list__items"></ul>
@@ -230,7 +229,11 @@
     </main>
 
     <footer>
-      <p>&copy; 2026 NexCare. All rights reserved.</p>
+      <p class="footer__contact">
+        Privacy enquiries: <a href="mailto:privacy@elarahealthcare.co.ke">privacy@elarahealthcare.co.ke</a>
+        · Security disclosure: <a href="mailto:security@elarahealthcare.co.ke">security@elarahealthcare.co.ke</a>
+      </p>
+      <p>&copy; 2026 Elara Healthcare. All rights reserved.</p>
     </footer>
 
     <script type="module" src="scripts/main.js"></script>

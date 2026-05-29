@@ -1,0 +1,4 @@
+Contact: mailto:security@elarahealthcare.co.ke
+Expires: 2027-05-29T00:00:00Z
+Preferred-Languages: en, sw
+Canonical: https://elarahealthcare.co.ke/.well-known/security.txt
