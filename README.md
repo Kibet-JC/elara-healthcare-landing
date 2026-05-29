@@ -100,8 +100,7 @@ NexCare is built as a sequence of modules. This repository is module 1.
 ## Known limitations
 
 - Online booking submissions persist on the visitor's device only; Phase 2 introduces the real API and submits to the clinic system.
-- Clinic locations in the appointment form (Nairobi / Mombasa / Kisumu) are placeholder values; the production clinic list is set before public launch.
-- The callback phone number shown in the saved-requests list is a placeholder (+254 000 000 000); replaced before public launch.
+- Only the Eldoret clinic is bookable today (telemedicine first); Nairobi and Mombasa appear in the selector as "coming soon" and cannot be selected until those clinics open.
 - The Privacy Notice link points to the GitHub-rendered `PRIVACY.md`; a dedicated `/privacy` page on the site is tracked as a separate issue.
 - Custom domain is not yet configured; the site is served from `kibet-jc.github.io/nexcare-landing/` during Phase 1.
 
@@ -126,8 +125,8 @@ To report a security vulnerability, please follow the process in [SECURITY.md](.
 | Project lead / Clinical Officer | Kibet |
 | Email | kibet@jeremiahchebii.net |
 | GitHub | [@Kibet-JC](https://github.com/Kibet-JC) |
-| Privacy / DPO enquiries | _TODO: privacy@nexcare-domain_ |
-| Security disclosure | _TODO: security@nexcare-domain_ |
+| Privacy / DPO enquiries | privacy@elarahealthcare.co.ke |
+| Security disclosure | security@elarahealthcare.co.ke |
 
 ---
 

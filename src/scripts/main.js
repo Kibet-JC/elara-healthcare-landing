@@ -23,15 +23,15 @@ const FIELDS = [
 
 const SUCCESS_MESSAGE =
   "Saved on this device. Your request appears in the list below. " +
-  "To confirm a booking, please call us at +254 000 000 000.";
+  "To confirm a booking, please call us at +254 724 699 077.";
 
 const SUBMIT_LABEL_CREATE = "Request appointment";
 const SUBMIT_LABEL_UPDATE = "Update request";
 
 const LOCATION_LABELS = {
+  eldoret: "Eldoret",
   nairobi: "Nairobi",
   mombasa: "Mombasa",
-  kisumu: "Kisumu",
 };
 
 const REASON_MAX = 120;
