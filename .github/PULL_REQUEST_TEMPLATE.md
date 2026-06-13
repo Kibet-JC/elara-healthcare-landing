@@ -14,7 +14,7 @@ Closes #
 - [ ]
 - [ ]
 
-## NexCare review checklist
+## Elara Healthcare review checklist
 
 - [ ] Branch named `<type>/<issue-number>-<slug>`
 - [ ] One issue → one PR (no scope creep)

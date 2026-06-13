@@ -1,10 +1,10 @@
-/* NexCare — appointment state and persistence (ES module).
+/* Elara Healthcare — appointment state and persistence (ES module).
  * Phase 1: backed by localStorage. Phase 2 will swap this file
  * for a real API client; consumers should only import the
  * functions exported below. */
 
-const STORAGE_KEY = "nexcare:appointments:v1";
-const PROBE_KEY = "nexcare:probe";
+const STORAGE_KEY = "elara:appointments:v1";
+const PROBE_KEY = "elara:probe";
 
 export function isPersistenceAvailable() {
   try {

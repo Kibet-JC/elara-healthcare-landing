@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Propose a new capability for this NexCare module
+about: Propose a new capability for this Elara Healthcare module
 title: ''
 labels: feature
 assignees: Kibet-JC
