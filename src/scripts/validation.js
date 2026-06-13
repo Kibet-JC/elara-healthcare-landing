@@ -1,4 +1,4 @@
-/* NexCare — appointment form validation (pure functions, ES module). */
+/* Elara Healthcare — appointment form validation (pure functions, ES module). */
 
 export function isRequired(value) {
   return typeof value === "string" && value.trim().length > 0;

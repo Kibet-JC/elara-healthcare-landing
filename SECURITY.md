@@ -18,7 +18,7 @@ We do not currently run a paid bug-bounty programme. We will publicly credit goo
 
 ## 2. Scope
 
-This policy covers all Elara Healthcare-operated services and repositories under the `Kibet-JC` and (future) `nexcare` GitHub organizations, including:
+This policy covers all Elara Healthcare-operated services and repositories under the `Kibet-JC` and (future) `elara-health-group` GitHub organizations, including:
 
 - Web frontends (`elara-healthcare-landing`, `nexcare-web`)
 - Backend APIs (`nexcare-api` and successors)

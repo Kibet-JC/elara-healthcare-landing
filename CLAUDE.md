@@ -1,6 +1,6 @@
-# CLAUDE.md — NexCare project conventions for Claude Code
+# CLAUDE.md — Elara Healthcare project conventions for Claude Code
 
-This file is read automatically by Claude Code on every session in this repo. It encodes the working conventions for NexCare so you (Claude Code) do not need to be re-briefed each time.
+This file is read automatically by Claude Code on every session in this repo. It encodes the working conventions for Elara Healthcare so you (Claude Code) do not need to be re-briefed each time.
 
 ---
 
@@ -67,7 +67,7 @@ One issue → one branch → one PR → one merge. If a PR grows past ~300 lines
 ### 3.4 Files Claude Code must not modify without explicit instruction
 
 - `COMPLIANCE.md`, `PRIVACY.md`, `SECURITY.md` — these have specific legal and clinical phrasing. Claude Code may **link to them** from the README but must not summarize, paraphrase, or rewrite them. If a change seems needed, surface it to Kibet for DPO/legal review first.
-- `LICENSE` — proprietary / all-rights-reserved by default for NexCare. Do not switch to MIT or any OSS license without explicit instruction.
+- `LICENSE` — proprietary / all-rights-reserved by default for Elara Healthcare. Do not switch to MIT or any OSS license without explicit instruction.
 
 ---
 
@@ -75,7 +75,7 @@ One issue → one branch → one PR → one merge. If a PR grows past ~300 lines
 
 ### 4.1 General
 
-- No inline styles, no inline scripts (this applies to all NexCare web frontends).
+- No inline styles, no inline scripts (this applies to all Elara Healthcare web frontends).
 - Server-side validation on every external boundary; never trust the client.
 - Parameterized queries via the project ORM (no raw SQL with user input).
 - Secrets via environment variables or a secret manager. **Never** in source. `.env` is in `.gitignore` from commit #1.

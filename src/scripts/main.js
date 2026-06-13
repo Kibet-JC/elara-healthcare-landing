@@ -1,4 +1,4 @@
-/* NexCare — main script */
+/* Elara Healthcare — main script */
 
 import { validateAppointment } from "./validation.js";
 import {
