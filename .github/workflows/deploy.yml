@@ -1,4 +1,4 @@
-# Deploy the NexCare landing site to GitHub Pages.
+# Deploy the Elara Healthcare landing site to GitHub Pages.
 #
 # This workflow uploads the contents of `src/` as a Pages artifact on every
 # push to `main` (and on manual dispatch from the Actions tab), then deploys
