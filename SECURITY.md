@@ -1,4 +1,4 @@
-# NexCare — Security
+# Elara Healthcare — Security
 
 > Internal security policy and incident-response playbook for the NexCare HIMS/EHR. Reviewed by the engineering lead and the DPO. Read alongside `COMPLIANCE.md` and `PRIVACY.md`.
 
@@ -6,7 +6,7 @@
 
 ## 1. Reporting a vulnerability
 
-If you believe you have found a security vulnerability in any NexCare service, please email **security@elarahealthcare.co.ke**.
+If you believe you have found a security vulnerability in any Elara Healthcare service, please email **security@elarahealthcare.co.ke**.
 
 - Please include: a description of the issue, steps to reproduce, the affected URL or component, and your name and contact details so we can follow up.
 - We will acknowledge receipt within 2 business days and aim to provide a substantive response within 14 days.
@@ -18,11 +18,11 @@ We do not currently run a paid bug-bounty programme. We will publicly credit goo
 
 ## 2. Scope
 
-This policy covers all NexCare-operated services and repositories under the `Kibet-JC` and (future) `nexcare` GitHub organizations, including:
+This policy covers all Elara Healthcare-operated services and repositories under the `Kibet-JC` and (future) `nexcare` GitHub organizations, including:
 
 - Web frontends (`nexcare-landing`, `nexcare-web`)
 - Backend APIs (`nexcare-api` and successors)
-- Databases and backups managed by NexCare
+- Databases and backups managed by Elara Healthcare
 - AI-integration endpoints
 
 Out of scope: third-party platforms (Vercel, Railway, Anthropic, GitHub) — please report issues in those platforms to the relevant vendor.
@@ -101,7 +101,7 @@ Out of scope: third-party platforms (Vercel, Railway, Anthropic, GitHub) — ple
 
 ### 4.3 Notification thresholds (interpretation guide)
 
-The KDPA requires notification of breaches that are "likely to result in risk to the rights and freedoms" of data subjects. As a rule of thumb for NexCare:
+The KDPA requires notification of breaches that are "likely to result in risk to the rights and freedoms" of data subjects. As a rule of thumb for Elara Healthcare:
 
 - Any unauthorized access to clinical records is notifiable.
 - Loss of an unencrypted backup is notifiable.
@@ -114,7 +114,7 @@ When in doubt, notify. Confirm thresholds with counsel.
 
 ```
 To: ODPC notification address
-Subject: Personal data breach notification — NexCare — [reference]
+Subject: Personal data breach notification — Elara Healthcare — [reference]
 
 1. Controller details
    - Legal name, registration number, contact
@@ -136,7 +136,7 @@ Subject: Personal data breach notification — NexCare — [reference]
 ```
 Dear [name],
 
-We are writing to let you know about a security incident at NexCare that may
+We are writing to let you know about a security incident at Elara Healthcare that may
 have affected your personal information.
 
 What happened: [plain-language description]
@@ -152,7 +152,7 @@ not happen again.
 
 Yours sincerely,
 [DPO / Lead Clinician]
-NexCare
+Elara Healthcare
 ```
 
 ---

@@ -1,8 +1,8 @@
-# NexCare — Privacy Notice
+# Elara Healthcare — Privacy Notice
 
-> Patient-facing notice. Plain language. Explains what NexCare does with your personal information and how you can exercise your rights under the **Data Protection Act, 2019** of the Republic of Kenya.
+> Patient-facing notice. Plain language. Explains what Elara Healthcare does with your personal information and how you can exercise your rights under the **Data Protection Act, 2019** of the Republic of Kenya.
 >
-> This notice should be reviewed by qualified Kenyan data-protection counsel before NexCare is used with real patients.
+> This notice should be reviewed by qualified Kenyan data-protection counsel before Elara Healthcare is used with real patients.
 
 **Last updated:** _TODO: date_
 **Effective from:** _TODO: date_
@@ -11,7 +11,7 @@
 
 ## 1. Who we are
 
-NexCare is operated by _TODO: legal entity name_, a healthcare provider registered in the Republic of Kenya.
+Elara Healthcare is operated by _TODO: legal entity name_, a healthcare provider registered in the Republic of Kenya.
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ NexCare is operated by _TODO: legal entity name_, a healthcare provider register
 | Data Protection Officer (DPO) | _TODO: name and contact_ |
 | ODPC registration number | _TODO_ |
 
-We are the **data controller** for the personal information you give us when you book appointments, attend consultations, or use any NexCare service.
+We are the **data controller** for the personal information you give us when you book appointments, attend consultations, or use any Elara Healthcare service.
 
 ---
 
@@ -69,11 +69,11 @@ We only collect information that is necessary to provide your care or to meet a 
 
 We do not sell your data. We share it only where necessary, and only with parties bound by appropriate confidentiality and data-protection obligations.
 
-- **Clinicians inside NexCare** who are involved in your care.
+- **Clinicians inside Elara Healthcare** who are involved in your care.
 - **Partner facilities** when you are referred for tests, imaging, or specialist care.
 - **Social Health Authority (SHA / SHIF)** and **private insurers** for eligibility checks and claims.
 - **Statutory bodies** (e.g., Ministry of Health) for legally required reporting.
-- **Service providers (sub-processors)** who help us run NexCare — for example, hosting, backups, and AI services. The current list is in `COMPLIANCE.md`.
+- **Service providers (sub-processors)** who help us run Elara Healthcare — for example, hosting, backups, and AI services. The current list is in `COMPLIANCE.md`.
 - **Law enforcement or courts** where we are legally required to disclose.
 
 We never share your data for purposes you have not been informed of.
@@ -139,7 +139,7 @@ If a breach affects your data, we will notify you and the Office of the Data Pro
 
 ## 9. Cookies and similar technologies
 
-The NexCare website uses a small number of cookies that are strictly necessary for the site to function (for example, to remember your session). We do not set advertising or cross-site tracking cookies. _TODO: confirm and update if any analytics cookies are added; if so, present a consent banner._
+The Elara Healthcare website uses a small number of cookies that are strictly necessary for the site to function (for example, to remember your session). We do not set advertising or cross-site tracking cookies. _TODO: confirm and update if any analytics cookies are added; if so, present a consent banner._
 
 ---
 

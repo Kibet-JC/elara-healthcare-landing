@@ -1,6 +1,6 @@
-# NexCare — Compliance
+# Elara Healthcare — Compliance
 
-> Internal-facing document. Describes how NexCare meets Kenyan legal and regulatory obligations as a Health Information Management System (HIMS) / Electronic Health Record (EHR) operating in the Republic of Kenya.
+> Internal-facing document. Describes how Elara Healthcare meets Kenyan legal and regulatory obligations as a Health Information Management System (HIMS) / Electronic Health Record (EHR) operating in the Republic of Kenya.
 >
 > **This document is a working draft prepared by the engineering team. Before any module processes real patient data in production, the controller and engineering lead must have it reviewed by qualified Kenyan health-IT and data-protection counsel and confirm registration status with the Office of the Data Protection Commissioner (ODPC).**
 
@@ -10,18 +10,18 @@
 
 | Field | Value |
 |---|---|
-| Legal name | _TODO: register / confirm legal entity (e.g., "NexCare Health Ltd")_ |
+| Legal name | _TODO: register / confirm legal entity (e.g., "Elara Healthcare Ltd")_ |
 | Registered office | _TODO: physical address in Kenya_ |
 | Principal contact | Kibet, Clinical Officer (Lead Clinician) |
 | Email | kibet@jeremiahchebii.net |
 | ODPC registration number | _TODO: register as a data controller under KDPA, then record number here_ |
 | Designated Data Protection Officer (DPO) | _TODO: appoint DPO; record name, email, phone_ |
 
-A DPO appointment is appropriate given that NexCare's core processing is large-scale processing of sensitive personal data (health data), per the Kenya Data Protection Act, 2019.
+A DPO appointment is appropriate given that Elara Healthcare's core processing is large-scale processing of sensitive personal data (health data), per the Kenya Data Protection Act, 2019.
 
 ---
 
-## 2. Regulatory framework NexCare operates under
+## 2. Regulatory framework Elara Healthcare operates under
 
 | Instrument | Why it applies |
 |---|---|
@@ -40,7 +40,7 @@ A DPO appointment is appropriate given that NexCare's core processing is large-s
 
 ## 3. Lawful bases for processing
 
-NexCare processes personal data — including sensitive health data — under the following lawful bases (KDPA s. 30 and s. 45):
+Elara Healthcare processes personal data — including sensitive health data — under the following lawful bases (KDPA s. 30 and s. 45):
 
 | Processing activity | Lawful basis | Notes |
 |---|---|---|
@@ -55,7 +55,7 @@ NexCare processes personal data — including sensitive health data — under th
 
 ## 4. Sensitive personal data (health data)
 
-Health data is "sensitive personal data" under KDPA s. 2 and is subject to s. 44–46. NexCare:
+Health data is "sensitive personal data" under KDPA s. 2 and is subject to s. 44–46. Elara Healthcare:
 
 - Processes only health data **necessary** for clinical care, billing, and statutory reporting (data minimization).
 - Restricts access via role-based access control (`patient`, `clinician`, `admin`) and the principle of least privilege.
@@ -78,7 +78,7 @@ A DPIA is required under KDPA s. 31 for processing that is likely to result in a
 
 ## 6. Records of Processing Activities (RoPA)
 
-NexCare maintains a Record of Processing Activities per KDPA s. 24, including:
+Elara Healthcare maintains a Record of Processing Activities per KDPA s. 24, including:
 
 - Categories of data subjects and personal data
 - Purposes of processing and lawful bases
@@ -93,7 +93,7 @@ The RoPA is reviewed at least annually and on any material change. _TODO: mainta
 
 ## 7. Sub-processors
 
-NexCare uses the following third-party processors. Each processor is bound by a Data Processing Agreement (DPA) consistent with KDPA s. 41 and Reg. 17.
+Elara Healthcare uses the following third-party processors. Each processor is bound by a Data Processing Agreement (DPA) consistent with KDPA s. 41 and Reg. 17.
 
 | Sub-processor | Service | Data category | Region | DPA in place |
 |---|---|---|---|---|
@@ -107,7 +107,7 @@ NexCare uses the following third-party processors. Each processor is bound by a 
 
 ## 8. Cross-border data transfers (KDPA s. 48)
 
-Where NexCare transfers personal data outside Kenya, it relies on at least one of the following:
+Where Elara Healthcare transfers personal data outside Kenya, it relies on at least one of the following:
 
 - Adequacy decision by the ODPC
 - Appropriate safeguards (e.g., contractual clauses, binding corporate rules)
@@ -136,7 +136,7 @@ After retention expires, data is securely deleted or fully anonymized. Anonymiza
 
 ## 10. Patient (data subject) rights
 
-NexCare honours the data subject rights set out in KDPA s. 26:
+Elara Healthcare honours the data subject rights set out in KDPA s. 26:
 
 - Right to be informed of the use of their data
 - Right of access to their data
