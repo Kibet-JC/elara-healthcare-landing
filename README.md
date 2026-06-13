@@ -10,7 +10,7 @@ NexCare is a Health Information Management System (HIMS) and Electronic Health R
 
 ## About NexCare
 
-NexCare is a clinical operations platform for primary and secondary care in Kenya, covering appointment booking, patient records, clinician workflows, and reporting into national systems including the Social Health Authority (SHA / SHIF) and the Ministry of Health. The platform is built and operated by **Kibet**, a registered Clinical Officer in Kenya, in partnership with established Kenyan hospital partners. Elara Healthcare operates under the **Kenya Data Protection Act, 2019** and the **Health Act, 2017**, and is registered with the Office of the Data Protection Commissioner (ODPC) as outlined in [COMPLIANCE.md](./COMPLIANCE.md). Modules move to production progressively under the per-module readiness gates defined in `COMPLIANCE.md` §12. This repository contains the landing site only; the clinical core (`nexcare-api`), the patient + clinician web app (`nexcare-web`), and the appointment intake module (`nexcare-appointments-client`) are tracked separately.
+NexCare is a clinical operations platform for primary and secondary care in Kenya, covering appointment booking, patient records, clinician workflows, and reporting into national systems including the Social Health Authority (SHA / SHIF) and the Ministry of Health. The platform is built and operated by **Kibet**, a registered Clinical Officer in Kenya, in partnership with established Kenyan hospital partners. Elara Healthcare operates under the **Kenya Data Protection Act, 2019** and the **Health Act, 2017**, and is registered with the Office of the Data Protection Commissioner (ODPC) as outlined in [COMPLIANCE.md](./COMPLIANCE.md). Modules move to production progressively under the per-module readiness gates defined in `COMPLIANCE.md` §12. This repository contains the landing site only; the clinical core (`nexcare-api`), the patient + clinician web app (`nexcare-web`), and the appointment intake module (`elara-appointments-client`) are tracked separately.
 
 ---
 
@@ -89,7 +89,7 @@ NexCare is built as a sequence of modules. This repository is module 1.
 | # | Module | Repository | Status |
 |---|---|---|---|
 | 1 | Public landing site | `elara-healthcare-landing` | **Live** |
-| 2 | Client-side appointment intake (extracted into its own module) | `nexcare-appointments-client` | Planned |
+| 2 | Client-side appointment intake (extracted into its own module) | `elara-appointments-client` | Planned |
 | 3 | Clinical API (Node + Postgres + Prisma) | `nexcare-api` | Planned |
 | 4 | Patient + clinician web app (React) | `nexcare-web` | Planned |
 | 5 | Auth + RBAC + audit logs | extends API + web | Planned |
