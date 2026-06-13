@@ -114,6 +114,6 @@ One issue → one branch → one PR → one merge. If a PR grows past ~300 lines
 
 - Roadmap and module ladder: `~/Documents/Claude/Projects/CodeOps Lab/NEXCARE_90_DAY_ROADMAP.md`
 - Compliance and privacy templates: `~/Documents/Claude/Projects/CodeOps Lab/templates/`
-- Issue bootstrap script pattern: `~/Documents/Claude/Projects/CodeOps Lab/scripts/bootstrap-nexcare-landing-issues.sh`
+- Issue bootstrap script pattern: `~/Documents/Claude/Projects/CodeOps Lab/scripts/bootstrap-elara-healthcare-landing-issues.sh`
 
 When in doubt, ask Kibet rather than guess. When asking, propose two concrete options and recommend one.
