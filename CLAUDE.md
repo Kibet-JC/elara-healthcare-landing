@@ -81,7 +81,7 @@ One issue → one branch → one PR → one merge. If a PR grows past ~300 lines
 - Secrets via environment variables or a secret manager. **Never** in source. `.env` is in `.gitignore` from commit #1.
 - No `localStorage` or `sessionStorage` for any clinical data after Phase 2 — clinical data lives in the API + Postgres only.
 
-### 4.2 This repo specifically (`nexcare-landing`)
+### 4.2 This repo specifically (`elara-healthcare-landing`)
 
 - Vanilla HTML, CSS, JS. No frameworks, no bundler.
 - Semantic HTML5 landmarks: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`.

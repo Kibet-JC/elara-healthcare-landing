@@ -1,6 +1,6 @@
 # Elara Healthcare — Landing Site
 
-**Live site:** https://kibet-jc.github.io/nexcare-landing/
+**Live site:** https://kibet-jc.github.io/elara-healthcare-landing/
 
 ![Elara Healthcare hero](./docs/screenshots/hero-desktop-light.png)
 
@@ -18,7 +18,7 @@ NexCare is a clinical operations platform for primary and secondary care in Keny
 
 | | |
 |---|---|
-| Production URL | https://kibet-jc.github.io/nexcare-landing/ |
+| Production URL | https://kibet-jc.github.io/elara-healthcare-landing/ |
 | Hosting        | GitHub Pages |
 | Deploy         | Auto on push to `main`, see [Deploy](#deploy) |
 | Status         | Phase 1 — informational landing only; online booking submits to the local device only until Phase 2 |
@@ -63,8 +63,8 @@ Lighthouse on the live URL, mobile profile.
 ## Run locally
 
 ```bash
-git clone https://github.com/Kibet-JC/nexcare-landing.git
-cd nexcare-landing
+git clone https://github.com/Kibet-JC/elara-healthcare-landing.git
+cd elara-healthcare-landing
 npx serve src
 # Open http://localhost:3000
 ```
@@ -88,7 +88,7 @@ NexCare is built as a sequence of modules. This repository is module 1.
 
 | # | Module | Repository | Status |
 |---|---|---|---|
-| 1 | Public landing site | `nexcare-landing` | **Live** |
+| 1 | Public landing site | `elara-healthcare-landing` | **Live** |
 | 2 | Client-side appointment intake (extracted into its own module) | `nexcare-appointments-client` | Planned |
 | 3 | Clinical API (Node + Postgres + Prisma) | `nexcare-api` | Planned |
 | 4 | Patient + clinician web app (React) | `nexcare-web` | Planned |
@@ -102,7 +102,7 @@ NexCare is built as a sequence of modules. This repository is module 1.
 - Online booking submissions persist on the visitor's device only; Phase 2 introduces the real API and submits to the clinic system.
 - Only the Eldoret clinic is bookable today (telemedicine first); Nairobi and Mombasa appear in the selector as "coming soon" and cannot be selected until those clinics open.
 - The Privacy Notice link points to the GitHub-rendered `PRIVACY.md`; a dedicated `/privacy` page on the site is tracked as a separate issue.
-- Custom domain is not yet configured; the site is served from `kibet-jc.github.io/nexcare-landing/` during Phase 1.
+- Custom domain is not yet configured; the site is served from `kibet-jc.github.io/elara-healthcare-landing/` during Phase 1.
 
 ---
 
